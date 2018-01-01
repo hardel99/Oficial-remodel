@@ -1,27 +1,43 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-	var height = $(window).height();
+  var height = $(window).height();
 
-	ajustesIniciales();
-
-
-	function ajustesIniciales(){
-		$("section#body").css({"margin-top": height - 80 + "px"});
-	}
+  ajustesIniciales();
 
 
-	$(document).scroll(function(){
-		var scrollTop = $(this).scrollTop();
-		var pixels = scrollTop / 70;
+  function ajustesIniciales() {
+    $("section#body").css({
+      "margin-top": height - 80 + "px"
+    });
+  }
 
-		if(scrollTop < height){
-			$("section#contenedor_general").css({
-				"-webkit-filter": "blur(" + pixels + "px)",
-				"background-position": "center -" + pixels * 10 + "px"
-			});
 
+  $(document).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    var pixels = scrollTop / 70;
+
+    if (scrollTop < height) {
+      $("section#contenedor_general").css({
+        "-webkit-filter": "blur(" + pixels + "px)",
+        "background-position": "center -" + pixels * 10 + "px"
+      });
+    }
+
+  });
+
+	//Desde aqui empiezo a hacer mi magia
+
+	var sigsec = $('#seccion');
+
+	sigsec.waypoint(function (qCam) {
+		if(qCam == "down"){
+			$('.logo').attr('src','pictures/logo_dark.png');
+		}else{
+			$('.logo').attr('src','pictures/logo.png');
 		}
 
-	});
+	}, { offset: '5%'});
+
+	//listo prro
 
 });
