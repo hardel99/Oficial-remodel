@@ -1,0 +1,2 @@
+No hacer caso al nombre de la carpeta
+El css correcto es index_estilo, el otro es solo prueba y pues alli esta ese logo que quiero que cambie cuando cambie el scroll

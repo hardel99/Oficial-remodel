@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Julius Sans One',sans-serif;
+}
+section#contenedor_general{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url(../pictures/body1.png);
+  background-size:cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+img{
+
+width: 75px;
+height: 75px;
+position: fixed;
+margin-left: 613px;
+margin-top: 15px;
+
+  
+
+}
+
+section#body{
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+
+}
+section#scrolldown{
+  margin-left: 88px;
+  margin-top: 78px;
+  width: 350px;
+  height: 60px;
+}
+
+header{
+  width: 100%;
+  background-color: #e0e0e0 transparent;
+  box-shadow: 1px 1px 5px #000
+  height: 75px;
+}
+
+
+section#menu{
+  width: 470px;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 750px
+}
+
+section#menu ul a{
+  color: white;
+  text-decoration: none;
+  font: 16px ;
+  padding: 12px 15px 12px 15px;
+  border-bottom: 5px solid transparent;
+  }
+
+section#menu ul a:hover{
+  border-bottom: 5px solid #ef003e;
+
+}
+
+p#titulo{
+font-family: 'PT Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 4em;
+  color: white;
+}
+p#menorque{
+margin-top: 68px;
+font-family: 'PT Sans', sans-serif;
+/*-webkit-transform:rotate(270deg)------ usar a este men para hacer un tipo colage de letras xddd*/
+color: white;
+font-size: 1.5em;
+
+}
+section#seccion{
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed-----------------------------------------------------------------------------------------
+
+}
+
