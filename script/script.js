@@ -9,6 +9,10 @@ $(document).ready(function() {
     $("section#body").css({
       "margin-top": height - 80 + "px"
     });
+
+    $('section#seccion').css({
+      "height": height + "px"         //para veitar cambios en tamaños de pantalla y que sea responsive
+    });
   }
 
 
