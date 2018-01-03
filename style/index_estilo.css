@@ -87,6 +87,7 @@ p#menorque {
   font-size: 1.5em;
 }
 
+/*No hay necesidad de poner height aqui*/
 section#seccion {
   width: 100%;
   margin-top: 20px;
