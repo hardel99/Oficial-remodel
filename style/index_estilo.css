@@ -1,8 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One');  /*Faltaban las comillas*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
   margin: 0;
   padding: 0;
   font-family: 'Julius Sans One', sans-serif;
+}
+
+body{
+  background-color: #403c3c;
 }
 
 section#contenedor_general {
@@ -19,7 +24,7 @@ section#contenedor_general {
   overflow: hidden;
 }
 
-img {
+.logo {
   width: 75px;
   height: 75px;
   position: fixed;
@@ -61,7 +66,7 @@ section#menu {
 section#menu ul a {
   color: white;
   text-decoration: none;
-  font: 16px;
+  font-size: 16px;
   padding: 12px 15px 12px 15px;
   border-bottom: 5px solid transparent;
   transition: .3s ease-in-out;
@@ -87,6 +92,7 @@ p#menorque {
   font-size: 1.5em;
 }
 
+/*No hay necesidad de poner height aqui*/
 section#seccion {
   width: 100%;
   margin-top: 20px;
@@ -96,4 +102,80 @@ section#seccion {
   background-attachment: fixed;
   background-image: url(../pictures/body2.png);
   overflow: hidden;
+}
+
+/*
+  Parte de los servicios que ofrecemos y como se muestran
+
+  P.D:
+
+  Los hice sin enlace ni nada, porque que weba men
+  y no se me ocurrieron muchas ideas de que pondriamos en esos enlaces
+*/
+
+.contenServ{
+  margin-top: 150px;
+  width: 84.5%;
+  margin: 7.625%;
+}
+
+.serfv div{
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.texted h2{
+  letter-spacing: 5px;
+  font-weight: lighter;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #e7e7e7;
+}
+
+.texted{
+  float: left;
+  width: 600px;
+  height: 450px;
+  line-height: 1.5;
+}
+
+.content{
+  margin-top: 75px;
+  padding: 10px 15px;
+}
+
+.texted p{
+  font-size: 17px;
+  text-align: left;
+  color: #b9b9b9;
+}
+
+.image-Ar img{
+  width: 600px;
+  height: 450px;
+}
+
+.izquierdas{
+  float: left;
+}
+
+.derechas{
+  float: right;
+}
+
+#footer{
+  height: 120px;
+  width: 100%;
+  background-color: rgb(71, 73, 75);
+  text-align: center;
+  color: #fff;
+  clear: both;
+}
+
+#footer p{
+  padding-top: 45px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: lighter;
 }
