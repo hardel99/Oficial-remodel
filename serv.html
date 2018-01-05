@@ -11,6 +11,30 @@
   <link rel="stylesheet" href="style/index_estilo.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".tu").waypoint(function() {
+        $(".tu").addClass('animated fadeInRight');
+      }, {offset: '85%'});
+
+      $(".tri").waypoint(function() {
+        $(".tri").addClass('animated fadeInLeft');
+      }, {offset: '85%'});
+
+      $(".isi").waypoint(function() {
+        $(".isi").addClass('animated fadeInRight');
+      }, {offset: '85%'});
+
+      $(".az").waypoint(function() {
+        $(".az").addClass('animated fadeInLeft');
+      }, {offset: '85%'});
+
+      $(".ei").waypoint(function() {
+        $(".ei").addClass('animated fadeInRight');
+      }, {offset: '85%'});
+    });
+  </script>
 </head>
 
 <body>
@@ -33,7 +57,7 @@
   <section class="contenServ">
 
     <div class="serfv">
-      <div class="texted">
+      <div class="texted animated fadeInLeft">
         <div class="content">
           <h2>Servicio1</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum, numquam quidem illo !</p>
@@ -46,12 +70,13 @@
     </div>
     </div>
 
+
     <div class="serfv">
       <div class="image-Ar izquierdas">
         <img src="pictures/ser2.JPG" alt="">
       </div>
 
-      <div class="texted">
+      <div class="texted tu">
         <div class="content">
           <h2>Servicio2</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum, numquam quidem illo facilis omnis excepturi deleniti minima reiciendis minus officia quam, enim qui neque id!</p>
@@ -59,25 +84,27 @@
       </div>
     </div>
 
+
     <div class="serfv">
-      <div class="texted">
+      <div class="texted tri">
         <div class="content">
           <h2>Servicio3</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in </p>
         </div>
       </div>
+    </div>
 
-      <div class="image-Ar derechas">
-        <img src="pictures/ser3.png" alt="">
-      </div>
+    <div class="image-Ar derechas">
+      <img src="pictures/ser3.png" alt="">
+    </div>
+
+
+    <div class="image-Ar izquierdas">
+      <img src="pictures/ser4.JPG" alt="">
     </div>
 
     <div class="serfv">
-      <div class="image-Ar izquierdas">
-        <img src="pictures/ser4.JPG" alt="">
-      </div>
-
-      <div class="texted">
+      <div class="texted isi">
         <div class="content">
           <h2>Servicio4</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum</p>
@@ -85,25 +112,27 @@
       </div>
     </div>
 
+
     <div class="serfv">
-      <div class="texted">
+      <div class="texted az">
         <div class="content">
           <h2>Servicio5</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
       </div>
+    </div>
 
-      <div class="image-Ar derechas">
-        <img src="pictures/ser5.JPG" alt="">
-      </div>
+    <div class="image-Ar derechas">
+      <img src="pictures/ser5.JPG" alt="">
+    </div>
+
+
+    <div class="image-Ar izquierdas">
+      <img src="pictures/ser6.png" alt="">
     </div>
 
     <div class="serfv">
-      <div class="image-Ar izquierdas">
-        <img src="pictures/ser6.png" alt="">
-      </div>
-
-      <div class="texted">
+      <div class="texted ei">
         <div class="content">
           <h2>Servicio6</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum</p>
