@@ -41,7 +41,5 @@ $(document).ready(function() {
 		}
 
 	}, { offset: '5%'});
-
 	//listo prro
-
 });

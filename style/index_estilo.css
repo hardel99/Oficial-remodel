@@ -1,4 +1,6 @@
-@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One');  /*Faltaban las comillas*/
+@import url('http://fonts.googleapis.com/css?family=Julius+Sans+One');
+/*Faltaban las comillas*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
   margin: 0;
@@ -6,7 +8,7 @@
   font-family: 'Julius Sans One', sans-serif;
 }
 
-body{
+body {
   background-color: #403c3c;
 }
 
@@ -58,11 +60,11 @@ section#menu {
   padding-left: 750px;
 }
 
-
 /*
   Aqui abajo hice cambios
   solo son 2 lineas
 */
+
 section#menu ul a {
   color: white;
   text-decoration: none;
@@ -93,6 +95,7 @@ p#menorque {
 }
 
 /*No hay necesidad de poner height aqui*/
+
 section#seccion {
   width: 100%;
   margin-top: 20px;
@@ -113,18 +116,18 @@ section#seccion {
   y no se me ocurrieron muchas ideas de que pondriamos en esos enlaces
 */
 
-.contenServ{
+.contenServ {
   margin-top: 150px;
   width: 84.5%;
   margin: 7.625%;
 }
 
-.serfv div{
+.serfv div {
   text-align: center;
   font-family: 'Roboto';
 }
 
-.texted h2{
+.texted h2 {
   letter-spacing: 5px;
   font-weight: lighter;
   font-size: 35px;
@@ -133,38 +136,38 @@ section#seccion {
   color: #e7e7e7;
 }
 
-.texted{
+.texted {
   float: left;
   width: 600px;
   height: 450px;
   line-height: 1.5;
 }
 
-.content{
+.content {
   margin-top: 75px;
   padding: 10px 15px;
 }
 
-.texted p{
+.texted p {
   font-size: 17px;
   text-align: left;
   color: #b9b9b9;
 }
 
-.image-Ar img{
-  width: 600px;
+.image-Ar img {
+  max-width: 600px;
   height: 450px;
 }
 
-.izquierdas{
+.izquierdas {
   float: left;
 }
 
-.derechas{
+.derechas {
   float: right;
 }
 
-#footer{
+#footer {
   height: 120px;
   width: 100%;
   background-color: rgb(71, 73, 75);
@@ -173,9 +176,75 @@ section#seccion {
   clear: both;
 }
 
-#footer p{
+#footer p {
   padding-top: 45px;
   font-size: 12px;
   font-family: 'Roboto';
   font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin-top: 10px;
+  }
+  .texted {
+    max-width: 430px;
+    height: 300px;
+    line-height: 2.1;
+  }
+  .texted h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .texted p {
+    font-size: 14px;
+  }
+  .image-Ar img {
+    width: 430px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-Ar img {
+    max-width: 323px;
+    height: 220px;
+  }
+
+  .texted {
+    max-width: 323px;
+    height: 220px;
+  }
+
+  .texted h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .texted p{
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .image-Ar img{
+    max-width: 178px;
+    height: 140px;
+  }
+
+  .texted{
+    max-width: 178px;
+    height: 140px;
+    line-height: 2.4;
+  }
+
+  .texted h2{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .texted p{
+    font-size: 9px;
+  }
 }
