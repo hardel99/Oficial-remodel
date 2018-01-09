@@ -8,6 +8,10 @@
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.contenedormax {
+  width: 100%;
+}
+
 body {
   background-color: #403c3c;
 }
@@ -30,8 +34,7 @@ section#contenedor_general {
   width: 75px;
   height: 75px;
   position: fixed;
-  margin-left: 613px;
-  margin-top: 15px;
+  margin: 15px 45%;
 }
 
 section#body {
@@ -50,7 +53,8 @@ section#scrolldown {
 header {
   width: 100%;
   background-color: #e0e0e0 transparent;
-  box-shadow: 1px 1px 5px #000 height: 75px;
+  /*box-shadow: 1px 1px 3px #000;          --No queda muy bien--
+  height: 75px;*/
 }
 
 section#menu {
@@ -89,22 +93,151 @@ p#titulo {
 p#menorque {
   margin-top: 68px;
   font-family: 'PT Sans', sans-serif;
-  /*-webkit-transform:rotate(270deg)------ usar a este men para hacer un tipo colage de letras xddd*/
+  /*-webkit-transform:rotate(270deg);------ usar a este men para hacer un tipo colage de letras xddd*/
   color: white;
   font-size: 1.5em;
 }
 
 /*No hay necesidad de poner height aqui*/
 
+.plan {
+  font-size: 2em;
+  position: absolute;
+  top: 550px;
+  left: 125px;
+  color: white;
+  border: 5px solid white;
+  padding: 10px 20px 10px 20px;
+  background: transparent;
+  border-radius: 2px;
+  transition: background 1s, color 1s;
+  -webkit-transition: background .5s, color .5s;
+  -moz-transition: background .5s, color .5s;
+  -o- transition: background .5s, color .5s;
+}
+
+.plan:hover {
+  background-color: #4db7ff;
+  color: black;
+  border-color: #4db7ff;
+}
+
 section#seccion {
   width: 100%;
   margin-top: 20px;
   background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(../pictures/body2.png);
   overflow: hidden;
+}
+
+section#seccion a{
+  text-decoration: none;
+}
+
+.circulero{
+  position: relative;
+  top: 35%;
+  width: 90%;
+  display: flex;
+  margin: 10px auto;
+}
+
+.cir{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 5px 20px;
+}
+
+.cir div{
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  margin-bottom: 60px;
+}
+
+section#seccion p{
+  width: 270px;
+  margin-top: 25px;
+  color: #646464;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.redes {
+  background-color: #ef213e;
+  -o-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -ms-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.redes:hover {
+  background-image: url(../pictures/socialmedia.png);
+}
+
+p#titulo2 {
+  color: black;
+  width: 450px;
+  position: relative;
+  top: 210px;
+  margin: 0 auto;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  color: #636363;
+}
+
+.design {
+  background-color: #9fd8ff;
+  -o-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -ms-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.design:hover {
+  background-image: url(../pictures/hoverdiseño.png);
+}
+
+.code {
+  background-color: #ef213e;
+  -o-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -ms-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.code:hover {
+  background-image: url(../pictures/iconcodigo.png);
+}
+
+.media {
+  background-color: #9fd8ff;
+  -o-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -ms-border-radius: 200px;
+  border-radius: 200px;
+}
+
+.media:hover {
+  background-image: url(../pictures/hovermedia.png);
+}
+
+.barbajo {
+  background-color: #282828;
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+
+.barbajo img {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  display: inline-block;
 }
 
 /*
@@ -118,7 +251,7 @@ section#seccion {
 
 .contenServ {
   margin-top: 150px;
-  width: 84.5%;
+  max-width: 84.5%;
   margin: 7.625%;
 }
 
@@ -183,7 +316,32 @@ section#seccion {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1360px) {
+  .content {
+    margin-top: 10px;
+  }
+  .texted {
+    max-width: 565px;
+    width: 565px;
+    height: 360px;
+    line-height: 2.1;
+  }
+  .texted h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .texted p {
+    font-size: 14px;
+  }
+  .image-Ar img {
+    max-width: 565px;
+    width: 565px;
+    height: 360px;
+  }
+}
+
+/*@media only screen and (min-width: 1024px) {
   .content {
     margin-top: 10px;
   }
@@ -201,12 +359,12 @@ section#seccion {
     font-size: 14px;
   }
   .image-Ar img {
-    width: 430px;
+    max-width: 430px;
     height: 300px;
   }
-}
+}*/
 
-@media screen and (max-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .image-Ar img {
     max-width: 323px;
     height: 220px;
@@ -225,9 +383,9 @@ section#seccion {
   .texted p{
     font-size: 11px;
   }
-}
+}*/
 
-@media screen and (max-width: 425px) {
+/*@media only screen and (min-width: 425px) {
   .image-Ar img{
     max-width: 178px;
     height: 140px;
@@ -247,4 +405,4 @@ section#seccion {
   .texted p{
     font-size: 9px;
   }
-}
+}*/

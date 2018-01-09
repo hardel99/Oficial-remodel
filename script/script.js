@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
 
     $('section#seccion').css({
-      "height": height + "px"         //para veitar cambios en tamaños de pantalla y que sea responsive
+      "height": height - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
     });
   }
 
