@@ -18,9 +18,8 @@ p{
   padding: 10px 100px;
 }
 
-section#menu {
-  position: absolute;
-  right: 7%;
+body{
+  background-color: #eff8ff;
 }
 
 section#menu ul a {

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="pictures/log.ico" type="image/x-icon" />
   <title>Social Media | Interfaz</title>
 
   <link rel="stylesheet" href="style/animate.css">
@@ -59,11 +61,8 @@
       <section class="insta">
         <div class="textCon">
           <h2>Instagram</h2>
-          <p>El contenido que incluye componentes visuales como imágenes destacadas. infografías o vídeos tiene mayor alcance y
-            es considerablemente más atractivo que el que no lo tiene.
-            <br><br>
-            Una imagen vale más de mil palabras, las aplicaciones como
-            Instagram cada día conquistan más usuarios, incluso entre los negocios y las grandes empresas.</p>
+          <p>El contenido que incluye componentes visuales como imágenes destacadas. infografías o vídeos tiene mayor alcance y es considerablemente más atractivo que el que no lo tiene.
+            <br><br> Una imagen vale más de mil palabras, las aplicaciones como Instagram cada día conquistan más usuarios, incluso entre los negocios y las grandes empresas.</p>
         </div>
 
         <div class="pic" id="scroll3">
@@ -81,14 +80,18 @@
 
     <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
     <script type="text/javascript">
-      $(document).ready(function () {
-        $('#scroll2').waypoint(function(){
+      $(document).ready(function() {
+        $('#scroll2').waypoint(function() {
           $('#scroll2').addClass('animated fadeInLeft');
-        }, {offset: '90%'});
+        }, {
+          offset: '90%'
+        });
 
-        $('#scroll3').waypoint(function(){
+        $('#scroll3').waypoint(function() {
           $('#scroll3').addClass('animated fadeInRight');
-        }, {offset: '90%'});
+        }, {
+          offset: '90%'
+        });
       });
     </script>
   </div>
