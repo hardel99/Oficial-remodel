@@ -312,22 +312,6 @@ p#titulo2 {
   float: right;
 }
 
-#footer {
-  height: 120px;
-  width: 100%;
-  background-color: rgb(71, 73, 75);
-  text-align: center;
-  color: #fff;
-  clear: both;
-}
-
-#footer p {
-  padding-top: 45px;
-  font-size: 12px;
-  font-family: 'Roboto';
-  font-weight: lighter;
-}
-
 @media only screen and (max-width: 1360px) {
   .content {
     margin-top: 10px;
