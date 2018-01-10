@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+p, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.15em;
+}
+
+h2 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  font-weight: 100;
+  line-height: 3.5;
+  margin: 40px 0;
+}
+
+p{
+  padding: 10px 100px;
+}
+
+section#menu {
+  position: absolute;
+  right: 7%;
+}
+
+section#menu ul a {
+  color: #1c1c1c;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.mein-cont {
+  width: 100%;
+}
+
+.mein-cont section {
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+
+.feis {
+  background-color: #eff8ff;
+  color: black;
+  text-align: center;
+}
+
+.textCon {
+  flex: 1;
+}
+
+.pic {
+  flex: 1;
+  display: inline-block;
+}
+
+.feis img {
+  height: 345px;
+  width: auto;
+  margin: 100px auto;
+}
+
+.tuit {
+  background-color: #9fd8ff;
+}
+
+.tuit h2 {
+  color: #0b97f7;
+}
+
+.tuit img {
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+  display: block;
+}
+
+.insta {
+  background-color: #28212d;
+  color: white;
+}
+
+.insta h2 {
+  color: #f55065;
+}
+
+.insta img{
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+  display: block;
+}

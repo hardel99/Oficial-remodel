@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" class="animated fadeIn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social Media | Interfaz</title>
+
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="style/index_estilo.css">
+  <link rel="stylesheet" href="style/midias.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src='script/script.js'></script>
+</head>
+
+<body>
+  <div class="contenedormax">
+    <header class="animated fadeInDown">
+
+      <img src="pictures/logo_dark.png" class="logo">
+      <section id="menu">
+        <ul>
+          <a href="index.html#">Inicio</a>
+          <a href="nosotros.html#">Nosotros</a>
+          <a href="serv.html#">Portafolio</a>
+          <a href="video.html#">Contacto</a>
+        </ul>
+
+      </section>
+    </header>
+
+    <div class="mein-cont">
+      <section class="feis">
+        <div class="textCon">
+          <h2>Facebook</h2>
+          <p>Es imprescindible que tu marca, proyecto o producto tenga una cuenta en esta red social, ya sea como perfil de usuario o como una fanpage. Se puede aprovechar para publicar contenido viral, que estimule la opinión pública e invite a tus fans
+            a debatir y publicar comentarios.</p>
+        </div>
+
+        <div class="pic animated fadeInRight">
+          <img src="pictures/faceinfo.png" alt="Media Social">
+        </div>
+      </section>
+
+      <section class="tuit">
+        <div class="pic" id="scroll2">
+          <img src="pictures/hashtag.png" alt="Media Social">
+        </div>
+
+        <div class="textCon">
+          <h2>Twitter</h2>
+          <p>Twitter es especialmente atractiva para empresas que quieren comunicar ofertas periódicas y para profesionales que quieren captar clientes. Es una red social de índole informativo, y especial para el acercamiento diario con los seguidores, es
+            buena alternativa para conocer las opiniones acerca de tu negocio, la opinon atraves de esta red no pueden faltar.</p>
+        </div>
+      </section>
+
+      <section class="insta">
+        <div class="textCon">
+          <h2>Instagram</h2>
+          <p>El contenido que incluye componentes visuales como imágenes destacadas. infografías o vídeos tiene mayor alcance y
+            es considerablemente más atractivo que el que no lo tiene.
+            <br><br>
+            Una imagen vale más de mil palabras, las aplicaciones como
+            Instagram cada día conquistan más usuarios, incluso entre los negocios y las grandes empresas.</p>
+        </div>
+
+        <div class="pic" id="scroll3">
+          <img src="pictures/inst.png" alt="Media Social">
+        </div>
+      </section>
+    </div>
+
+    <div class="barbajo">
+      <a href="https://www.facebook.com/interfazsv/"><img id="iconf" src="socB/face2.png"></a>
+      <a href="https://twitter.com/interfazsv"><img src="socB/twit2.png"></a>
+      <a href="https://web.whatsapp.com"><img src="socB/whatsapp2.png"></a>
+      <a href="https://www.youtube.com/channel/UCxRbWLOtrRwYzDXxJrcA2Zw"><img src="socB/yout2.png"></a>
+    </div>
+
+    <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#scroll2').waypoint(function(){
+          $('#scroll2').addClass('animated fadeInLeft');
+        }, {offset: '90%'});
+
+        $('#scroll3').waypoint(function(){
+          $('#scroll3').addClass('animated fadeInRight');
+        }, {offset: '90%'});
+      });
+    </script>
+  </div>
+</body>
+
+</html>
