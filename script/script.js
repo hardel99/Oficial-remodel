@@ -1,18 +1,47 @@
 $(document).ready(function() {
 
   var height = $(window).height();
+  var width = $(window).width();
+  var displayed = 0;
 
   ajustesIniciales();
+  menuMovil();
 
 
   function ajustesIniciales() {
     $("section#body").css({
-      "margin-top": height - 80 + "px"
+      "margin-top": height - 190 + "px"
     });
 
-    $('section#seccion').css({
-      "height": height - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
-    });
+    if(width>1000){
+      $('section#seccion').css({
+        "height": height - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
+      });
+    }else{
+      $('section#seccion').css({
+        "height": (height * 3.7) - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
+      });
+
+      $(".cir").css({
+        "height": height/1.2 +"px"
+      });
+    }
+  }
+
+  function menuMovil() {
+    $(".haided").click(function () {
+      if(displayed == 0){
+        $("#menu").animate({
+          left: "0"
+        });
+        displayed = 1;
+      }else{
+        $("#menu").animate({
+          left: "-100%"
+        });
+        displayed = 0;
+      }
+    })
   }
 
 
