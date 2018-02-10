@@ -55,6 +55,7 @@ section#scrolldown {
 header {
   width: 100%;
   background-color: #e0e0e0 transparent;
+  z-index: 100;
   /*box-shadow: 1px 1px 3px #000;          --No queda muy bien--
   height: 75px;*/
 }
@@ -185,6 +186,7 @@ p#titulo2 {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   color: #636363;
+  text-align: center;
 }
 
 .design {
@@ -323,7 +325,7 @@ p#titulo2 {
     display: block;
     width: 100%;
     background-color: rgb(37, 37, 37);
-    height: 125px;
+    height: 175px;
   }
 
   .haided a{
@@ -331,14 +333,14 @@ p#titulo2 {
   }
 
   .haided a img{
-    width: 50px;
+    width: 65px;
     height: auto;
-    margin: 40px 40px;
+    margin: 50px 50px;
   }
 
   .logo{
-    width: 85px;
-    height: 85px;
+    width: 115px;
+    height: 115px;
     left: 90%;
     transform: translate(-50%, 20%);
   }
@@ -363,7 +365,7 @@ p#titulo2 {
   }
 
   .plan{
-    top: 85%;
+    top: 87%;
     left: 60%;
     height: 150px;
     font-size: 2.5em;
@@ -398,46 +400,3 @@ p#titulo2 {
     padding-top: 70px;
   }
 }
-
-/*@media only screen and (min-width: 768px) {
-  .image-Ar img {
-    max-width: 323px;
-    height: 220px;
-  }
-
-  .texted {
-    max-width: 323px;
-    height: 220px;
-  }
-
-  .texted h2{
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-
-  .texted p{
-    font-size: 11px;
-  }
-}*/
-
-/*@media only screen and (min-width: 425px) {
-  .image-Ar img{
-    max-width: 178px;
-    height: 140px;
-  }
-
-  .texted{
-    max-width: 178px;
-    height: 140px;
-    line-height: 2.4;
-  }
-
-  .texted h2{
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-
-  .texted p{
-    font-size: 9px;
-  }
-}*/

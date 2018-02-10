@@ -90,3 +90,79 @@ section#menu ul a {
   margin: 50px auto;
   display: block;
 }
+
+@media only screen and (max-width: 1000px) {
+  .mein-cont section{
+    display: block;
+  }
+
+  .textCon h2{
+    display: block;
+    width: 100%;
+    font-size: 6em;
+    line-height: 1;
+  }
+
+  .textCon p{
+    display: block;
+    width: 90%;
+    font-size: 2.5em;
+    line-height: 1.4;
+    font-weight: 50;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .textCon, .pic{
+    flex: 0;
+  }
+
+  .pic{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .tuit .pic{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .tuit .pic img{
+    width: 100%;
+    height: auto;
+  }
+
+  .feis img{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .feis p{
+    position: absolute;
+    bottom: 100px;
+    left: 5%;
+  }
+
+  .tuit h2, .insta h2{
+    line-height: 2em;
+  }
+
+  .insta .pic{
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .insta img{
+    width: 100%;
+    height: auto;
+  }
+
+  section#menu ul a{
+    padding: 55px 30px;
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+}

@@ -25,6 +25,12 @@ $(document).ready(function() {
       $(".cir").css({
         "height": height/1.2 +"px"
       });
+
+      $('.mein-cont section').css({
+        "height" : height - 175 + "px"
+      });
+
+      $('.logo').attr('src','pictures/logo.png');
     }
   }
 
@@ -35,11 +41,19 @@ $(document).ready(function() {
           left: "0"
         });
         displayed = 1;
+
+        $(".feis").css({
+          "opacity" : 0.2
+        });
       }else{
         $("#menu").animate({
           left: "-100%"
         });
         displayed = 0;
+
+        $(".feis").css({
+          "opacity" : 1
+        });
       }
     })
   }

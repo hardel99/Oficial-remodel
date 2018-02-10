@@ -85,17 +85,31 @@
     <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('#scroll2').waypoint(function() {
-          $('#scroll2').addClass('animated fadeInLeft');
-        }, {
-          offset: '90%'
-        });
+        if($(window).width>1000){
+          $('#scroll2').waypoint(function() {
+            $('#scroll2').addClass('animated fadeInLeft');
+          }, {
+            offset: '90%'
+          });
 
-        $('#scroll3').waypoint(function() {
-          $('#scroll3').addClass('animated fadeInRight');
-        }, {
-          offset: '90%'
-        });
+          $('#scroll3').waypoint(function() {
+            $('#scroll3').addClass('animated fadeInRight');
+          }, {
+            offset: '90%'
+          });
+        }else{
+          $('#scroll2').waypoint(function() {
+            $('#scroll2').addClass('animated fadeInLeft');
+          }, {
+            offset: '71.9%'
+          });
+
+          $('#scroll3').waypoint(function() {
+            $('#scroll3').addClass('animated fadeInRight');
+          }, {
+            offset: '95%'
+          });
+        }
       });
     </script>
   </div>
