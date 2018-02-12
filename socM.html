@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="pictures/log.ico" type="image/x-icon" />
   <title>Social Media | Interfaz</title>
@@ -98,17 +99,25 @@
             offset: '90%'
           });
         }else{
-          $('#scroll2').waypoint(function() {
-            $('#scroll2').addClass('animated fadeInLeft');
-          }, {
-            offset: '71.9%'
-          });
+          if($(window).width>450){
+            $('#scroll2').waypoint(function() {
+              $('#scroll2').addClass('animated fadeInLeft');
+            }, {
+              offset: '66%'
+            });
+          }else{
+            $('#scroll2').waypoint(function() {
+              $('#scroll2').addClass('animated fadeInLeft');
+            }, {
+              offset: '66%'
+            });
 
-          $('#scroll3').waypoint(function() {
-            $('#scroll3').addClass('animated fadeInRight');
-          }, {
-            offset: '95%'
-          });
+            $('#scroll3').waypoint(function() {
+              $('#scroll3').addClass('animated fadeInRight');
+            }, {
+              offset: '100%'
+            });
+          }
         }
       });
     </script>
