@@ -399,4 +399,34 @@ p#titulo2 {
     margin: auto;
     padding-top: 70px;
   }
+
+  .contenServ{
+    width: 100%;
+    margin: 50px 0px 20px;
+  }
+
+  .serfv{
+    display: block;
+    width: 100%;
+  }
+
+  .serfv div{
+    flex: 0;
+    display: block;
+    width: 100%;
+  }
+
+  .texted p{
+    padding-bottom: 100px;
+  }
+
+  .serfv p{
+    font-size: 2em;
+  }
+  /*.texted p{
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1;
+  }*/
 }

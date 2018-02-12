@@ -30,6 +30,10 @@ $(document).ready(function() {
         "height" : height - 175 + "px"
       });
 
+      $('.serfv').css({
+        "height" : (height/1.2) - 120 + "px"
+      });
+
       $('.logo').attr('src','pictures/logo.png');
     }
   }
