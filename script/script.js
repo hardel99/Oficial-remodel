@@ -32,7 +32,7 @@ $(document).ready(function() {
         });
 
         $('.serfv').css({
-          "height" : height - 120 + "px"
+          "height" : height - 50 + "px"
         });
       }else{
         $('section#seccion').css({
