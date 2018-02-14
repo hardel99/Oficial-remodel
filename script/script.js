@@ -28,7 +28,7 @@ $(document).ready(function() {
         });
 
         $('.mein-cont section').css({
-          "height" : height - 20 + "px"
+          "height" : height + "px"
         });
 
         $('.serfv').css({
