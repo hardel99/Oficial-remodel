@@ -1,0 +1,42 @@
+body{
+  background-color: #f5f5f5;
+}
+
+section#menu ul a{
+  color: #323232;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.texting{
+  max-width: 760px;
+}
+
+.texting img{
+  width: 50%;
+}
+
+.card-deck .card{
+  min-width: 200px;
+}
+
+.cardingT{
+  max-width: 700px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.card h1{
+  color: #17c756;
+}
+
+.lead, .card-body, .card-body li, .texting a{
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+@media only screen and (max-width: 1000px) {
+  section#menu ul a{
+    color: white;
+  }
+}
