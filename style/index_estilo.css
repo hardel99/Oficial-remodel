@@ -77,7 +77,7 @@ section#menu ul a {
   -ms-transition: .3s ease-in-out;
 }
 
-.haided{
+.haided {
   display: none;
 }
 
@@ -85,7 +85,7 @@ section#menu ul a:hover {
   border-bottom: 5px solid #ef003e;
 }
 
-p{
+p {
   font-family: 'Montserrat';
 }
 
@@ -168,15 +168,6 @@ section#seccion p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.redes {
-  background-color: #ef213e;
-  -o-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -ms-border-radius: 200px;
-  border-radius: 200px;
-}
-
 p#titulo2 {
   color: black;
   width: 450px;
@@ -189,52 +180,50 @@ p#titulo2 {
   text-align: center;
 }
 
-.design {
-  background-color: #9fd8ff;
+.cir div {
   -o-border-radius: 200px;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
   -ms-border-radius: 200px;
   border-radius: 200px;
+  transition: all .2s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.design {
+  background-color: #9fd8ff;
+  background-image: url(../pictures/hoverdiseño.png);
+  background-position: -100% 80px;
+  background-size: 50% 50%;
 }
 
 .design:hover {
-  background-image: url(../pictures/hoverdiseño.png);
-  background-size: 50% 50%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-color: #76afd6;
 }
 
 .code {
   background-color: #ef213e;
-  -o-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -ms-border-radius: 200px;
-  border-radius: 200px;
+  background-image: url(../pictures/iconcodigo.png);
+  background-size: 60% 40%;
+  background-position: center -100%;
 }
 
 .code:hover {
-  background-image: url(../pictures/iconcodigo.png);
-  background-size: 60% 40%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-color: #c90924;
 }
 
 .media {
-  background-color: #9fd8ff;
-  -o-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -ms-border-radius: 200px;
-  border-radius: 200px;
+  background-color: #261e7e;
+  background-image: url(../pictures/hovermedia.png);
+  background-position: 300% 80px;
+  background-size: 60% 30%;
 }
 
 .media:hover {
-  background-image: url(../pictures/hovermedia.png);
-  background-size: 60% 30%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-color: #120b55;
 }
 
 .barbajo {
@@ -259,7 +248,7 @@ p#titulo2 {
   transition: filter 0.35s ease-in-out;
 }
 
-.barbajo a:hover img{
+.barbajo a:hover img {
   filter: grayscale(0%);
 }
 
@@ -277,7 +266,7 @@ p#titulo2 {
   margin: 100px auto 20px;
 }
 
-.serfv{
+.serfv {
   display: flex;
 }
 
@@ -311,18 +300,18 @@ p#titulo2 {
   height: auto;
   overflow: hidden;
 }
-@media only screen and (max-width: 1000px) and (min-width: 450px) { /*Tablet*/
-  body{
+
+@media only screen and (max-width: 1000px) and (min-width: 450px) {
+  /*Tablet*/
+  body {
     padding-top: 70px;
   }
-
-  header{
+  header {
     margin: 0;
     top: 0;
     position: fixed;
   }
-  
-  section#menu{
+  section#menu {
     width: 80%;
     height: 100%;
     position: fixed;
@@ -332,15 +321,13 @@ p#titulo2 {
     left: -100%;
     overflow: scroll;
   }
-
-  section#menu ul a{
+  section#menu ul a {
     display: block;
     border-bottom: 2px solid rgba(255, 255, 255, 0.46);
     padding: 25px 30px;
     font-size: 1em;
   }
-
-  .haided{
+  .haided {
     display: block;
     width: 100%;
     margin: 0;
@@ -348,43 +335,35 @@ p#titulo2 {
     background-color: rgb(37, 37, 37);
     height: 50px;
   }
-
-  .haided a img{
+  .haided a img {
     width: 20px;
     height: auto;
     margin: 15px 15px;
   }
-
-  .logo{
+  .logo {
     width: 36px;
     height: 36px;
     left: 95%;
     transform: translate(-50%, 20%);
   }
-
-  section#scrolldown{
+  section#scrolldown {
     margin: 70px 20px;
   }
-
-  .plan{
+  .plan {
     top: 300px;
     left: 420px;
   }
-
-  p#titulo2{
+  p#titulo2 {
     top: 100px;
     font-size: 2em;
   }
-
-  .circulero{
+  .circulero {
     top: 25%;
   }
-
-  .cir{
+  .cir {
     text-align: center;
   }
-
-  .cir div{
+  .cir div {
     font-size: 1em;
     width: 120px;
     height: 120px;
@@ -393,36 +372,31 @@ p#titulo2 {
     color: #000;
     line-height: 120px;
   }
-
-  section#seccion p{
+  section#seccion p {
     font-size: .8em;
   }
-
-  .contenServ{
+  .contenServ {
     width: 100%;
   }
-
-  .texted h2{
+  .texted h2 {
     margin: 20px auto;
   }
-
-  .texted p{
+  .texted p {
     font-size: .8em;
   }
 }
 
-@media only screen and (max-width: 450px) {/*Movil*/
-  body{
+@media only screen and (max-width: 450px) {
+  /*Movil*/
+  body {
     padding-top: 70px;
   }
-
-  header{
+  header {
     margin: 0;
     top: 0;
     position: fixed;
   }
-
-  section#menu{
+  section#menu {
     width: 80%;
     height: 100%;
     position: fixed;
@@ -433,15 +407,13 @@ p#titulo2 {
     overflow: scroll;
     z-index: 100;
   }
-
-  section#menu ul a{
+  section#menu ul a {
     display: block;
     border-bottom: 2px solid rgba(255, 255, 255, 0.46);
     padding: 25px 30px;
     font-size: 1em;
   }
-
-  .haided{
+  .haided {
     display: block;
     width: 100%;
     margin: 0;
@@ -449,25 +421,21 @@ p#titulo2 {
     background-color: rgb(37, 37, 37);
     height: 70px;
   }
-
-  .haided a{
+  .haided a {
     display: block;
   }
-
-  .haided a img{
+  .haided a img {
     width: 30px;
     height: auto;
     margin: 20px 20px;
   }
-
-  .logo{
+  .logo {
     width: 50px;
     height: 50px;
     left: 90%;
     transform: translate(-50%, 20%);
   }
-
-  section#scrolldown{
+  section#scrolldown {
     margin: 0;
     width: 100%;
     height: 100px;
@@ -475,44 +443,37 @@ p#titulo2 {
     bottom: 0px;
     background-color: rgb(39, 23, 59);
   }
-
-  p#titulo{
+  p#titulo {
     margin: 5px 10px 10px;
     font-size: 1.2em;
   }
-
-  p#menorque{
+  p#menorque {
     width: 50%;
     font-size: .7em;
     margin: 5px 15px;
   }
-
-  .plan{
+  .plan {
     top: 87%;
     left: 60%;
     height: 60px;
     font-size: 1em;
   }
-
-  p#titulo2{
+  p#titulo2 {
     width: 100%;
     font-size: 2em;
   }
-
-  .circulero{
+  .circulero {
     display: block;
     top: 12%;
   }
-
-  .cir{
+  .cir {
     margin: 0;
     padding: 0;
     display: block;
     position: relative;
     text-align: center;
   }
-
-  .cir div{
+  .cir div {
     vertical-align: middle;
     line-height: 200px;
     width: 200px;
@@ -521,51 +482,42 @@ p#titulo2 {
     margin-bottom: 20px;
     color: #000;
   }
-
-  .cir p{
+  .cir p {
     font-size: 1em;
     width: 80%;
     margin: auto;
     padding-top: 30px;
   }
-
-  .barbajo{
+  .barbajo {
     height: 95px;
   }
-
-  .barbajo img{
+  .barbajo img {
     width: 35px;
     height: 35px;
   }
-
-  .contenServ{
+  .contenServ {
     width: 100%;
     margin: 20px 0px 20px;
   }
-
-  .content{
+  .content {
     z-index: 1;
     margin-top: 20px;
     margin-bottom: 50px;
   }
-
-  .serfv{
+  .serfv {
     display: block;
     width: 100%;
   }
-
-  .serfv h2{
+  .serfv h2 {
     font-size: 1.8em;
     margin: 40px;
   }
-
-  .serfv div{
+  .serfv div {
     flex: 0;
     display: block;
     width: 100%;
   }
-
-  .serfv p{
+  .serfv p {
     font-size: .8em;
     text-align: center;
     padding: 0 10px;
