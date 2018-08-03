@@ -6,6 +6,11 @@ section#menu ul a{
   color: #323232;
 }
 
+.contain, .container{
+  position: relative;
+  z-index: 5;
+}
+
 .container {
   max-width: 1000px;
 }
@@ -98,7 +103,27 @@ section#menu ul a{
   max-width: 900px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) and (min-width: 600px){
+  section#menu ul a{
+    color: white;
+  }
+
+  .row{
+    font-size: .8rem!important;
+    padding: 1rem!important;
+    margin: 20px 0px;
+  }
+
+  .row img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
   section#menu ul a{
     color: white;
   }

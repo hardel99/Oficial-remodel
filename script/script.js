@@ -44,66 +44,20 @@ $(document).ready(function() {
     }
   }
 
-  function cancelScroll(){
-    window.scrollTo(0,0);
-  }
 
   function menuMovil() {
     $(".haided").click(function () {
-      window.addEventListener("scroll", cancelScroll);
 
       if(displayed == 0){
         $("#menu").animate({
           left: "0"
         });
         displayed = 1;
-
-        $(".feis").animate({
-          "opacity" : 0.2
-        });
-
-        $(".content").animate({
-          "opacity" : 0.2
-        });
-
-        $("#scrolldown p").animate({
-          "opacity" : 0.2
-        });
-
-        $(".plan").animate({
-          "opacity" : 0.2
-        });
-
-        $(".container").animate({
-          "opacity" : 0.2
-        });
       }else{
-        window.removeEventListener("scroll", cancelScroll);
-
         $("#menu").animate({
           left: "-100%"
         });
         displayed = 0;
-
-        $(".feis").animate({
-          "opacity" : 1
-        });
-
-        $(".content").animate({
-          "opacity" : 1
-        });
-
-        $("#scrolldown p").animate({
-          "opacity" : 1
-        });
-
-        $(".plan").animate({
-          "opacity" : 1
-        });
-
-        $(".container").animate({
-          "opacity" : 1
-        });
       }
     })
   }

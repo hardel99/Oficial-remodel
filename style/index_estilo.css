@@ -55,7 +55,7 @@ section#scrolldown {
 header {
   width: 100%;
   background-color: #e0e0e0 transparent;
-  z-index: 100;
+  z-index: 1000;
   /*box-shadow: 1px 1px 3px #000;          --No queda muy bien--
   height: 75px;*/
 }
@@ -312,6 +312,16 @@ p#titulo2 {
   overflow: hidden;
 }
 @media only screen and (max-width: 1000px) and (min-width: 450px) { /*Tablet*/
+  body{
+    padding-top: 70px;
+  }
+
+  header{
+    margin: 0;
+    top: 0;
+    position: fixed;
+  }
+  
   section#menu{
     width: 80%;
     height: 100%;
@@ -402,15 +412,26 @@ p#titulo2 {
 }
 
 @media only screen and (max-width: 450px) {/*Movil*/
+  body{
+    padding-top: 70px;
+  }
+
+  header{
+    margin: 0;
+    top: 0;
+    position: fixed;
+  }
+
   section#menu{
     width: 80%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.78);
     left: -100%;
     overflow: scroll;
+    z-index: 100;
   }
 
   section#menu ul a{
