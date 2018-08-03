@@ -20,7 +20,7 @@ $(document).ready(function() {
     }else{
       if(width<700){
         $('section#seccion').css({
-          "height": (height * 3.7) - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
+          "height": (height * 2.8) - 120 + "px"         //para evitar cambios en tamaños de pantalla y que sea responsive
         });
 
         $(".cir").css({
@@ -81,12 +81,13 @@ $(document).ready(function() {
 	var sigsec = $('#seccion');
 
 	sigsec.waypoint(function (qCam) {
-		if(qCam == "down"){
-			$('.logo').attr('src','pictures/logo_dark.png');
-		}else{
-			$('.logo').attr('src','pictures/logo.png');
-		}
-
+    if(width>1000){
+      if(qCam == "down"){
+  			$('.logo').attr('src','pictures/logo_dark.png');
+  		}else{
+  			$('.logo').attr('src','pictures/logo.png');
+  		}
+    }
 	}, { offset: '5%'});
 	//listo prro
 });
