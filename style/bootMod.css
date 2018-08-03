@@ -31,12 +31,87 @@ section#menu ul a{
   color: #17c756;
 }
 
-.lead, .card-body, .card-body li, .texting a{
+.lead, .card-body, .card-body li, .texting a, .card a{
   font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.card a:hover{
+  text-decoration: none;
+}
+
+.teibol{
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.contain .emul{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.row{
+  margin: 100px 0px;
+}
+
+.descr{
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.rait{
+  border-right: 0.75rem #000 solid;
+}
+
+.lef{
+  border-left: 0.75rem #000 solid;
+}
+
+.sectorUno{
+  background-image: url(../pictures/gabyrold.png);
+  background-size: contain;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+
+.sectorDos{
+  background-image: url(../pictures/sansuave.png);
+  background-size: contain;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+
+.sectorTres{
+  background-image: url(../pictures/sales.png);
+  background-size: contain;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+
+.contain .red{
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  color: red;
+}
+
+.bienvenida{
+  max-width: 900px;
 }
 
 @media only screen and (max-width: 1000px) {
   section#menu ul a{
     color: white;
+  }
+
+  .row{
+    display: inline-block;
+    padding: 1rem!important;
+    margin: 20px 0px;
+  }
+
+  .indiv{
+    display: block;
+    max-width: 100%;
+    flex: 0;
   }
 }

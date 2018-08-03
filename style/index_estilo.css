@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 /*Fuentes importadas*/
 
 * {
@@ -83,6 +83,10 @@ section#menu ul a {
 
 section#menu ul a:hover {
   border-bottom: 5px solid #ef003e;
+}
+
+p{
+  font-family: 'Montserrat';
 }
 
 p#titulo {
@@ -173,10 +177,6 @@ section#seccion p {
   border-radius: 200px;
 }
 
-.redes:hover {
-  background-image: url(../pictures/socialmedia.png);
-}
-
 p#titulo2 {
   color: black;
   width: 450px;
@@ -200,6 +200,9 @@ p#titulo2 {
 
 .design:hover {
   background-image: url(../pictures/hoverdiseño.png);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .code {
@@ -213,6 +216,9 @@ p#titulo2 {
 
 .code:hover {
   background-image: url(../pictures/iconcodigo.png);
+  background-size: 60% 40%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .media {
@@ -226,6 +232,9 @@ p#titulo2 {
 
 .media:hover {
   background-image: url(../pictures/hovermedia.png);
+  background-size: 60% 30%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .barbajo {
