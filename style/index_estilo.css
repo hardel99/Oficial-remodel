@@ -225,7 +225,7 @@ p#titulo2 {
 }
 
 .media {
-  background-color: #261e7e;
+  background-color: #000d20;
   background-image: url(../pictures/hovermedia.png);
   background-position: 300% 80px;
   background-size: 50% 25%;
@@ -233,7 +233,7 @@ p#titulo2 {
 
 .media:hover {
   background-position: center;
-  background-color: #120b55;
+  background-color: #0c1e37;
 }
 
 .barbajo {
