@@ -370,16 +370,12 @@ p#titulo2 {
   .circulero {
     top: 25%;
   }
-  .cir {
-    text-align: center;
-  }
+  
   .cir div {
     font-size: 1em;
     width: 120px;
     height: 120px;
     vertical-align: middle;
-    line-height: 200px;
-    color: #000;
     line-height: 120px;
   }
   section#seccion p {
@@ -480,17 +476,13 @@ p#titulo2 {
     margin: 0;
     padding: 0;
     display: block;
-    position: relative;
-    text-align: center;
   }
   .cir div {
-    vertical-align: middle;
     line-height: 200px;
     width: 200px;
     height: 200px;
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: white;
   }
   .cir p {
     font-size: 1em;
