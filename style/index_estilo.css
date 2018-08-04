@@ -228,7 +228,7 @@ p#titulo2 {
   background-color: #261e7e;
   background-image: url(../pictures/hovermedia.png);
   background-position: 300% 80px;
-  background-size: 60% 30%;
+  background-size: 50% 25%;
 }
 
 .media:hover {
@@ -370,7 +370,7 @@ p#titulo2 {
   .circulero {
     top: 25%;
   }
-  
+
   .cir div {
     font-size: 1em;
     width: 120px;
