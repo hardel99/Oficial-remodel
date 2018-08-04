@@ -151,14 +151,24 @@ section#seccion a {
   -ms-flex: 1;
   flex: 1;
   margin: 5px 20px;
+  text-align: center;
+  position: relative;
 }
 
 .cir div {
   width: 150px;
   height: 150px;
+  line-height: 150px;
   margin: 10px auto;
   margin-bottom: 60px;
-  font-size: 0px;
+  font-size: 1.5em;
+  color: white;
+  vertical-align: middle;
+  transition: all .2s ease-in-out;
+}
+
+.cir div:hover{
+  color: rgba(255, 255, 255, 0);
 }
 
 section#seccion p {
@@ -480,7 +490,7 @@ p#titulo2 {
     height: 200px;
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #000;
+    color: white;
   }
   .cir p {
     font-size: 1em;
