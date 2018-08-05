@@ -50,7 +50,7 @@ section#menu ul a{
   display: table;
 }
 
-.contain .emul{
+.emul{
   display: table-cell;
   vertical-align: middle;
 }
@@ -103,6 +103,42 @@ section#menu ul a{
   max-width: 900px;
 }
 
+.linkbar, .tel{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.linkbar:hover, .tel:hover{
+  text-decoration: none;
+}
+
+.linkbar::after, .tel::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2A3979;
+    transition: width .5s;
+}
+
+.linkbar:hover::after, .tel:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+#forTher{
+  perspective: 10px;
+}
+
+#salM{
+  transition: transform .3s ease-in-out;
+}
+
+/*.emul:hover #salM{
+  transform: skewX(25deg) skewY(25deg);
+}*/
+
 @media only screen and (max-width: 1024px) and (min-width: 600px){
   section#menu ul a{
     color: white;
@@ -121,9 +157,33 @@ section#menu ul a{
     top: 50%;
     transform: translateY(-50%);
   }
+
+  #least{
+    display: inline-block;
+    padding: 1rem!important;
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  #least img{
+    width: auto;
+    top: 0;
+    transform: none;
+  }
+
+  .sdm{
+    max-width: 100%;
+    flex: 0;
+  }
+
+  .col-6{
+    flex: 0;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+
   section#menu ul a{
     color: white;
   }
@@ -138,5 +198,19 @@ section#menu ul a{
     display: block;
     max-width: 100%;
     flex: 0;
+  }
+
+  .sdm{
+    max-width: 100%;
+    flex: 0;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .col-6{
+    flex: 0;
+    max-width: 100%;
   }
 }
