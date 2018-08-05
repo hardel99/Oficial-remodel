@@ -132,6 +132,8 @@ section#menu ul a{
 }
 
 #salM{
+  width: 100px;
+  height: auto;
   transition: transform .3s ease-in-out;
 }
 
@@ -139,13 +141,13 @@ section#menu ul a{
   transition: transform .3s ease-in-out;
 }
 .emul:hover{
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 /*.emul:hover #salM{
   transform: skewX(25deg) skewY(25deg);
 }*/
 
-@media only screen and (max-width: 1024px) and (min-width: 600px){
+@media only screen and (max-width: 1000px) and (min-width: 600px){
   section#menu ul a{
     color: white;
   }
@@ -172,7 +174,7 @@ section#menu ul a{
   }
 
   #least img{
-    width: auto;
+    width: 60px;
     top: 0;
     transform: none;
   }

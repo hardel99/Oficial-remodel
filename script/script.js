@@ -24,7 +24,7 @@ $(document).ready(function() {
     } else {
       if (width < 700) {
         $('section#seccion').css({
-          "height": (height * 2.8) - 120 + "px" //para evitar cambios en tamaños de pantalla y que sea responsive
+          "height": (height * 2.85) - 120 + "px" //para evitar cambios en tamaños de pantalla y que sea responsive
         });
 
         $(".squer").css({

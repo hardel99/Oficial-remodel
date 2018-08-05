@@ -465,6 +465,7 @@ p#titulo2 {
     font-size: 1em;
   }
   p#titulo2 {
+    top: 160px;
     width: 100%;
     font-size: 2em;
   }
