@@ -90,7 +90,7 @@ $(document).ready(function() {
   //Desde aqui empiezo a hacer mi magia
 
   //Watch this
-  var triger = document.getElementById("forTher");
+  /*var triger = document.getElementById("forTher");
   var imag = document.getElementById("salM");
 
   var maus = {
@@ -143,7 +143,8 @@ $(document).ready(function() {
   };
 
   var transformerYa = function(x, y) {
-    var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+    //var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+    //var style = "scale(" + x + ","+y+")" ;
     imag.style.transform = style;
     imag.style.webkitTransform = style;
     imag.style.mozTransform = style;
@@ -153,7 +154,7 @@ $(document).ready(function() {
 
   triger.onmouseenter = onMouseEnterHandler;
   triger.onmouseleave = onMouseLeaveHandler;
-  triger.onmousemove = onMouseMoveHandler;
+  triger.onmousemove = onMouseMoveHandler;*/
 
   var sigsec = $('#seccion');
 

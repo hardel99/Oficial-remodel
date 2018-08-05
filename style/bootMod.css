@@ -135,6 +135,12 @@ section#menu ul a{
   transition: transform .3s ease-in-out;
 }
 
+.emul{
+  transition: transform .3s ease-in-out;
+}
+.emul:hover{
+  transform: scale(1.2);
+}
 /*.emul:hover #salM{
   transform: skewX(25deg) skewY(25deg);
 }*/
