@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+  if(document.title == "Home | Interfaz"){
+    setTimeout(function(){
+      $('body').addClass('loaded animated fadeIn');
+      $('header').addClass('animated fadeInDown');
+    }, 800);
+  }
+
   var height = $(window).height();
   var width = $(window).width();
   var displayed = 0;
