@@ -141,7 +141,6 @@ section#menu ul a {
 
 #salM {
   width: 100px;
-  height: auto;
   -webkit-transition: transform .3s ease-in-out;
   -moz-transition: transform .3s ease-in-out;
   -o-transition: transform .3s ease-in-out;
