@@ -1,12 +1,12 @@
-body{
+body {
   background-color: #f5f5f5;
 }
 
-section#menu ul a{
+section#menu ul a {
   color: #323232;
 }
 
-.contain, .container{
+.contain, .container {
   position: relative;
   z-index: 5;
 }
@@ -15,209 +15,223 @@ section#menu ul a{
   max-width: 1000px;
 }
 
-.texting{
+.texting {
   max-width: 760px;
 }
 
-.texting img{
+.texting img {
   width: 50%;
 }
 
-.card-deck .card{
+.card-deck .card {
   min-width: 200px;
 }
 
-.cardingT{
+.cardingT {
   max-width: 700px;
   border-bottom: 1px solid #a3a3a3;
 }
 
-.card h1{
+.card h1 {
   color: #17c756;
 }
 
-.lead, .card-body, .card-body li, .texting a, .card a{
-  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+.lead, .card-body, .card-body li, .texting a, .card a {
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.card a:hover{
+.card a:hover {
   text-decoration: none;
 }
 
-.teibol{
+.teibol {
   width: 100%;
   height: 100%;
   display: table;
 }
 
-.emul{
+.emul {
   display: table-cell;
   vertical-align: middle;
 }
 
-.row{
+.row {
   margin: 100px 0px;
 }
 
-.descr{
+.descr {
   font-family: 'Montserrat';
   font-weight: bold;
 }
 
-.rait{
+.rait {
   border-right: 0.75rem #000 solid;
 }
 
-.lef{
+.lef {
   border-left: 0.75rem #000 solid;
 }
 
-.sectorUno{
+.sectorUno {
   background-image: url(../pictures/gabyrold.png);
   background-size: contain;
   background-position: center 0px;
   background-repeat: no-repeat;
 }
 
-.sectorDos{
+.sectorDos {
   background-image: url(../pictures/sansuave.png);
   background-size: contain;
   background-position: center 0px;
   background-repeat: no-repeat;
 }
 
-.sectorTres{
+.sectorTres {
   background-image: url(../pictures/sales.png);
   background-size: contain;
   background-position: center 0px;
   background-repeat: no-repeat;
 }
 
-.contain .red{
+.contain .red {
   font-family: 'Myriad Pro';
   font-style: italic;
   color: red;
 }
 
-.bienvenida{
+.bienvenida {
   max-width: 900px;
 }
 
-.linkbar, .tel{
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Montserrat';
+.linkbar, .tel {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat';
 }
 
-.linkbar:hover, .tel:hover{
+.linkbar:hover, .tel:hover {
   text-decoration: none;
 }
 
-.linkbar::after, .tel::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #2A3979;
-    transition: width .5s;
+.linkbar::after, .tel::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2A3979;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+  -o-transition: width .5s;
+  -ms-transition: width .5s;
+  transition: width .5s;
 }
 
-.linkbar:hover::after, .tel:hover::after{
-    width: 100%;
-    transition: width .3s;
+.linkbar:hover::after, .tel:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -o-transition: width .3s;
+  -ms-transition: width .3s;
+  transition: width .3s;
 }
 
-#forTher{
+#forTher {
   perspective: 10px;
 }
 
-#salM{
+#salM {
   width: 100px;
   height: auto;
+  -webkit-transition: transform .3s ease-in-out;
+  -moz-transition: transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  -ms-transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
 }
 
-.emul{
+#least .emul {
+  -webkit-transition: transform .3s ease-in-out;
+  -moz-transition: transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  -ms-transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
 }
-.emul:hover{
+
+#least .emul:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transform: scale(1.15);
 }
+
 /*.emul:hover #salM{
   transform: skewX(25deg) skewY(25deg);
 }*/
 
-@media only screen and (max-width: 1000px) and (min-width: 600px){
-  section#menu ul a{
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  section#menu ul a {
     color: white;
   }
-
-  .row{
-    font-size: .8rem!important;
-    padding: 1rem!important;
+  .row {
+    font-size: .8rem !important;
+    padding: 1rem !important;
     margin: 20px 0px;
   }
-
-  .row img{
+  .row img {
     width: 100%;
     height: auto;
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
-  #least{
+  #least {
     display: inline-block;
-    padding: 1rem!important;
+    padding: 1rem !important;
     margin: 20px 0px;
     width: 100%;
   }
-
-  #least img{
+  #least img {
     width: 60px;
     top: 0;
     transform: none;
   }
-
-  .sdm{
+  .sdm {
     max-width: 100%;
     flex: 0;
   }
-
-  .col-6{
+  .col-6 {
     flex: 0;
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-
-  section#menu ul a{
+  section#menu ul a {
     color: white;
   }
-
-  .row{
+  .row {
     display: inline-block;
-    padding: 1rem!important;
+    padding: 1rem !important;
     margin: 20px 0px;
   }
-
-  .indiv{
+  .indiv {
     display: block;
     max-width: 100%;
     flex: 0;
   }
-
-  .sdm{
+  .sdm {
     max-width: 100%;
     flex: 0;
   }
-
-  h3{
+  h3 {
     font-size: 1.2rem;
   }
-
-  .col-6{
+  .col-6 {
     flex: 0;
     max-width: 100%;
   }
