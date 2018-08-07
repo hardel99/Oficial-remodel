@@ -135,6 +135,10 @@ section#menu ul a {
   transition: width .3s;
 }
 
+#least{
+  overflow: hidden;
+}
+
 #forTher {
   perspective: 10px;
 }
