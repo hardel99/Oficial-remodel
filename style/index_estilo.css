@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-/*Fuentes importadas*/
-
 * {
   margin: 0;
   padding: 0;
@@ -103,38 +101,26 @@
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(0deg);
-    /* IE 9 */
     transform: rotate(0deg);
-    /* Firefox 16+, IE 10+, Opera */
   }
   100% {
     -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);
-    /* IE 9 */
     transform: rotate(360deg);
-    /* Firefox 16+, IE 10+, Opera */
   }
 }
 
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(0deg);
-    /* IE 9 */
     transform: rotate(0deg);
-    /* Firefox 16+, IE 10+, Opera */
   }
   100% {
     -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);
-    /* IE 9 */
     transform: rotate(360deg);
-    /* Firefox 16+, IE 10+, Opera */
   }
 }
 
@@ -165,7 +151,6 @@ section#contenedor_general {
   -o-transform: translate(-50%, 20%);
   -ms-transform: translate(-50%, 20%);
   transform: translate(-50%, 20%);
-  /*margin: 15px 46%;*/
 }
 
 section#body {
@@ -185,15 +170,12 @@ header {
   width: 100%;
   background-color: #e0e0e0 transparent;
   z-index: 1000;
-  /*box-shadow: 1px 1px 3px #000;          --No queda muy bien--
-  height: 75px;*/
 }
 
 section#menu {
   width: 45%;
   padding-top: 40px;
   margin-left: 55%;
-  /*padding-left: 750px;*/
 }
 
 section#menu ul a {
@@ -231,12 +213,9 @@ p#titulo {
 p#menorque {
   margin-top: 68px;
   font-family: 'PT Sans', sans-serif;
-  /*-webkit-transform:rotate(270deg);------ usar a este men para hacer un tipo colage de letras xddd*/
   color: white;
   font-size: 1.5em;
 }
-
-/*No hay necesidad de poner height aqui*/
 
 .plan {
   font-size: 2em;
@@ -411,15 +390,6 @@ p#titulo2 {
   filter: grayscale(0%);
 }
 
-/*
-  Parte de los servicios que ofrecemos y como se muestran
-
-  P.D:
-
-  Los hice sin enlace ni nada, porque que weba men
-  y no se me ocurrieron muchas ideas de que pondriamos en esos enlaces
-*/
-
 .contenServ {
   width: 95%;
   margin: 100px auto 20px;
@@ -460,8 +430,7 @@ p#titulo2 {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 450px) {
-  /*Tablet*/
+@media only screen and (max-width:1000px) and (min-width:450px) {
   body {
     padding-top: 70px;
   }
@@ -544,8 +513,7 @@ p#titulo2 {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  /*Movil*/
+@media only screen and (max-width:450px) {
   body {
     padding-top: 70px;
   }
