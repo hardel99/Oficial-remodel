@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-control" content="private">
 
   <link rel="icon" href="pictures/log.ico" type="image/x-icon" />
   <title>Servicios | Interfaz</title>
@@ -12,10 +13,10 @@
   <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/index_estilo.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="script/script.js"></script>
-  <script type="text/javascript">
+  <script async type="text/javascript">
     $(document).ready(function() {
       $(".tu").waypoint(function() {
         $(".tu").addClass('animated fadeInRight');
@@ -48,6 +49,10 @@
       });
     });
   </script>
+
+  <style media="screen">
+    body {background-color:#6c6a6a;}
+  </style>
 </head>
 
 <body>
