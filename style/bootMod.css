@@ -103,6 +103,10 @@ section#menu ul a {
   max-width: 900px;
 }
 
+.bienvenida p{
+  font-style: oblique;
+}
+
 .linkbar, .tel {
   display: inline-block;
   text-decoration: none;
