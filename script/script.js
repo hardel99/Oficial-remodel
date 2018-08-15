@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if (document.title == "Home | Interfaz") {
+  if (document.title == "Home | Interfaz" || document.title == "Portafolio | Interfaz") {
     setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
