@@ -1,13 +1,14 @@
 $(document).ready(function() {
-  if (document.title == "Home | Interfaz" || document.title == "Portafolio | Interfaz") {
-    /*setTimeout(function() {
+  if (document.title == "Home | Interfaz") {
+    setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
-    }, 800);*/
-    $(window).load(function(){
+    }, 800);
+  }else if(document.title == "Portafolio | Interfaz"){
+      setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
-    });
+    }, 2800);
   }
   var height = $(window).height();
   var width = $(window).width();
