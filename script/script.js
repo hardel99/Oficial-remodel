@@ -1,9 +1,13 @@
 $(document).ready(function() {
   if (document.title == "Home | Interfaz" || document.title == "Portafolio | Interfaz") {
-    setTimeout(function() {
+    /*setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
-    }, 800);
+    }, 800);*/
+    $(window).load(function(){
+      $('body').addClass('loaded animated fadeIn');
+      $('header').addClass('animated fadeInDown');
+    });
   }
   var height = $(window).height();
   var width = $(window).width();
