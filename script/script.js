@@ -8,7 +8,7 @@ $(document).ready(function() {
       setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
-    }, 2800);
+    }, 0);//Interesting
   }
   var height = $(window).height();
   var width = $(window).width();
