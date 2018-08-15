@@ -1,0 +1,404 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#animacion {
+  margin-top: 3.5rem;
+}
+
+.info a{
+  color: #f42e4e;
+  text-decoration: none;
+  font-family: 'Myriad Pro';
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.info a:hover{
+  color: #c7001c;
+}
+
+img {
+  max-width: 100%;
+}
+
+.item {
+  position: relative;
+  padding: 0em 0;
+  background: #ffffff;
+  border-top: 0.008px #e6e6e6ff solid;
+  box-shadow: 0px 2.95px 8.5px -6px #111;
+}
+
+.slide {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: width 0.4s;
+  -moz-transition: width 0.4s;
+  transition: width 0.4s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: width;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slide {
+    width: 50%;
+  }
+  .slider-active .slide {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.slider {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slider::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+
+.slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -ms-transition: -moz-transform 0.3s;
+  -o-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.slider li img {
+  display: block;
+  width: 100%;
+}
+
+.slider li.selected {
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.slider li.move-left {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider {
+    cursor: pointer;
+  }
+  .slider::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+  .slider::after {
+    /* slider cover layer - to indicate the image is clickable */
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(81, 62, 93, 0.4) url("../pictures/cd-icon-zoom.svg") no-repeat center center;
+    /* size of the icon */
+    background-size: 48px;
+    opacity: 0;
+    z-index: 4;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .no-touch .slider:hover::after {
+    opacity: 1;
+  }
+  .slider-active .slider {
+    cursor: auto;
+  }
+  .slider-active .slider::after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider-navigation li, .slider-pagination {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
+    -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
+    transition: opacity 0.4s 0s, visibility 0s 0.4s;
+  }
+  .slider-active .slider-navigation li, .slider-active .slider-pagination {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.4s 0.4s, visibility 0s 0.4s;
+    -moz-transition: opacity 0.4s 0.4s, visibility 0s 0.4s;
+    transition: opacity 0.4s 0.4s, visibility 0s 0.4s;
+  }
+}
+
+.slider-navigation li {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.slider-navigation li:first-of-type {
+  left: 10px;
+}
+
+.slider-navigation li:last-of-type {
+  right: 10px;
+}
+
+.slider-navigation li a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../pictures/cd-icon-arrow.svg") no-repeat center center;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.slider-navigation li a.inactive {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+
+.no-touch .slider-navigation li a:hover {
+  opacity: .7;
+}
+
+.slider-navigation li:first-of-type a {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider-navigation li:first-child {
+    left: 30px;
+  }
+  .slider-navigation li:last-child {
+    right: 30px;
+  }
+}
+
+.slider-pagination {
+  /* you won't see this element in the html but it will be created using jQuery */
+  position: absolute;
+  z-index: 6;
+  bottom: 30px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.slider-pagination:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.touch .slider-pagination {
+  visibility: hidden;
+}
+
+.slider-pagination li {
+  display: inline-block;
+  float: left;
+  margin: 0 5px;
+}
+
+.slider-pagination li.selected a {
+  background: #f5f4f3;
+}
+
+.slider-pagination a {
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #f5f4f3;
+  /* fix a bug in IE9/10 - transparent anchor not clickable */
+  background-color: rgba(255, 255, 255, 0);
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.slide .equiz {
+  display: none;
+  position: absolute;
+  z-index: 6;
+  top: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: url("../pictures/cd-icon-close.svg") no-repeat center center;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.4s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.4s;
+  -ms-transition: -moz-transform 0.3s 0s, visibility 0s 0.4s;
+  -o-transition: -moz-transform 0.3s 0s, visibility 0s 0.4s;
+  transition: transform 0.3s 0s, visibility 0s 0.4s;
+}
+
+.slider-active .slide .equiz {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+  -ms-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+  -o-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+}
+
+.no-touch .slider-active .slide .equiz:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 1024px) {
+  .slide .equiz {
+    display: block;
+  }
+}
+
+.info {
+  padding: 50px 5%;
+  text-align: center;
+  visibility: visible;
+}
+
+.slider-active .info{
+  visibility: hidden;
+}
+
+.info h2, .info p {
+  padding: 10px;
+}
+
+.info p {
+  font-size: .8rem;
+  text-align: left;
+  line-height: 1.5;
+  margin: 1em 0;
+  color: #666666;
+}
+
+.info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info .add-to-cart {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  padding: .8em 1.6em;
+  background-color: #f42e4e;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .info {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .info h2 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+}
+
+.espacio {
+  padding: 2.5em 0;
+  line-height: absolute;
+}

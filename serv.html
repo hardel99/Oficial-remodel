@@ -3,162 +3,292 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-control" content="private">
 
   <link rel="icon" href="pictures/log.ico" type="image/x-icon" />
-  <title>Servicios | Interfaz</title>
-
+  <title>Portafolio | Interfaz</title>
   <link rel="stylesheet" href="style/animate.css">
   <link rel="stylesheet" href="style/index_estilo.css">
+  <link rel="stylesheet" href="style/bootMod.css">
+  <link rel="stylesheet" href="style/style.css">
 
+  <script type="text/javascript" src='script/modernizr.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
-  <script type="text/javascript" src="script/script.js"></script>
-  <script async type="text/javascript">
-    $(document).ready(function() {
-      $(".tu").waypoint(function() {
-        $(".tu").addClass('animated fadeInRight');
-      }, {
-        offset: '100%'
-      });
-
-      $(".tri").waypoint(function() { //Isnt working
-        $(".tri").addClass('animated fadeInLeft');
-      }, {
-        offset: '100%'
-      });
-
-      $(".isi").waypoint(function() {
-        $(".isi").addClass('animated fadeInRight');
-      }, {
-        offset: '100%'
-      });
-
-      $(".az").waypoint(function() { //Isnt working
-        $(".az").addClass('animated fadeInLeft');
-      }, {
-        offset: '100%'
-      });
-
-      $(".ei").waypoint(function() {
-        $(".ei").addClass('animated fadeInRight');
-      }, {
-        offset: '100%'
-      });
-    });
-  </script>
-
-  <style media="screen">
-    body {background-color:#6c6a6a;}
-  </style>
+  <script type="text/javascript" src='script/script.js'></script>
 </head>
 
 <body>
+  <header>
 
-  <header class="animated fadeInDown">
-
-    <img src="pictures/logo.png" class="logo">
-
+    <img src="pictures/logo_dark.png" class="logo">
     <div class="haided">
-      <a href="#" class="jaid"><img src="pictures/menu.png" /></a>
+      <a href="#0" class="jaid"><img src="pictures/menu.png" /></a>
     </div>
 
     <section id="menu">
+
       <ul>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="serv.html">Servicios</a>
-        <a href="contact.html">Contacto</a>
+        <a href="index.html#">Inicio</a>
+        <a href="nosotros.html#">Nosotros</a>
+        <a href="serv.html#">Servicios</a>
+        <a href="contact.html#">Contacto</a>
       </ul>
 
     </section>
 
   </header>
 
-  <section class="contenServ">
+  <section class="item" id="animacion">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/3d/interfazvi1.png" alt="Treesun" /></li>
+        <li><img src="pictures/3d/interfazvi2.png" alt="Apel"></li>
+        <li><img src="pictures/3d/interfazvi3.png" alt="Camera"></li>
+        <li><img src="pictures/3d/interfazvi4.png" alt="Aidia"></li>
+        <li><img src="pictures/3d/interfazvi5.png" alt="Estructured"></li>
+        <li><img src="pictures/3d/interfazvi6.png" alt="Estructured"></li>
+        <li><img src="pictures/3d/interfazvi7.png" alt="Estructured"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
 
-    <div class="serfv" id="disain">
-      <div class="texted animated fadeInLeft">
-        <div class="content">
-          <h2>Servicio1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum, numquam quidem illo !</p>
-        </div>
-      </div>
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
 
-      <div class="image-Ar derechas">
-        <img src="pictures/ser1.png" alt="">
-      </div>
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
     </div>
 
-    <div class="serfv" id="animacion">
-      <div class="image-Ar izquierdas">
-        <img src="pictures/ser2.JPG" alt="">
-      </div>
+    <div class="info">
+      <h2>Ambientes y objetos 3D</h2>
 
-      <div class="texted tu">
-        <div class="content">
-          <h2>Servicio2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum, numquam quidem illo facilis omnis excepturi deleniti minima reiciendis minus officia quam, enim qui neque id!</p>
-        </div>
-      </div>
+      <p><br>Desarrollo de escenarios tridimensionales únicos o igual rediseñados para áreas como video y fotografia. También la creación de objetos 3D útiles para desarrollar proyectos destinados a la presentación de productos y animaciones. Así como llevar
+        a cabo el renderizado de diseños independientes en áreas como arquitectura, publicidad, educación o cualquier otro proyecto.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/68286925/Leyendas-VR">click aquí</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="espacioinecesario">
+    <div class="espacio">
+  </section>
+
+  <section class="item">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/pengui/superprengui.png" alt="Treesun" /></li>
+        <li><img src="pictures/pengui/superprengui2.png" alt="Apel"></li>
+        <li><img src="pictures/pengui/superprengui3.png" alt="Camera"></li>
+        <li><img src="pictures/pengui/superprengui4.png" alt="Aidia"></li>
+        <li><img src="pictures/pengui/superprengui5.png" alt="Estructured"></li>
+        <li><img src="pictures/pengui/superprengui6.png" alt="Estructured"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
     </div>
 
+    <div class="info">
+      <h2>Animación 2D</h2>
 
-    <div class="serfv" id="pagweb">
-      <div class="texted tri">
-        <div class="content">
-          <h2>Servicio3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in </p>
-        </div>
-      </div>
+      <p><br>Animaciones en dibujos 2D son proyectos orientados sobre todo para publicidad de una empresa que necesite mostrar sus servicios, productos, ofertas, presentar un evento o cualquier otro método publicitario en redes sociales como YouTube, Facebook
+        o en su propia pagina de empresa con el fin de atraer aún más la atención de clientes potenciales para la empresa.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/69066709/Animacion">click aquí</a>
+    </div>
+  </section>
 
-      <div class="image-Ar derechas">
-        <img src="pictures/ser3.png" alt="">
-      </div>
+  <section class="espacioinecesario">
+    <div class="espacio">
+  </section>
+
+  <section class="item" id="android">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/app/ad1.png" alt="Treesun" /></li>
+        <li><img src="pictures/app/ad2.png" alt="Apel"></li>
+        <li><img src="pictures/app/ad3.png" alt="Camera"></li>
+        <li><img src="pictures/app/ad4.png" alt="Aidia"></li>
+        <li><img src="pictures/app/ad5.png" alt="Aidia"></li>
+        <li><img src="pictures/app/ad6.png" alt="Aidia"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
     </div>
 
-    <div class="serfv" id="identidad">
-      <div class="image-Ar izquierdas">
-        <img src="pictures/ser4.JPG" alt="">
-      </div>
+    <div class="info">
+      <h2>Diseño de aplicaciones móviles</h2>
 
-      <div class="texted isi">
-        <div class="content">
-          <h2>Servicio4</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum</p>
-        </div>
-      </div>
+      <p><br>Las aplicaciones permiten al usuario efectuar un conjunto de tareas de cualquier tipo como profesional, educativas, de ocio, de acceso a servicios, etre otros. Desarrollamos apliaciones en Android siempre responsive que el usuario necesite para
+        su empresa como promocionar sus productos y servicios con sus clientes o para uso exclusivo de la empresa para sus diferentes áreas de trabajo.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/69068325/Aplicaciones-Android">click aquí</a>
+    </div>
+  </section>
+
+  <section class="espacioinecesario">
+    <div class="espacio">
+  </section>
+
+  <section class="item">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/jv/dan1.png" alt="Treesun" /></li>
+        <li><img src="pictures/jv/dan2.png" alt="Apel"></li>
+        <li><img src="pictures/jv/dan3.png" alt="Camera"></li>
+        <li><img src="pictures/jv/dan4.png" alt="Aidia"></li>
+        <li><img src="pictures/jv/dan5.png" alt="Aidia"></li>
+        <li><img src="pictures/jv/dan6.png" alt="Aidia"></li>
+        <li><img src="pictures/jv/dan7.png" alt="Aidia"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
     </div>
 
+    <div class="info">
+      <h2>Administradores de Base de Datos</h2>
 
-    <div class="serfv" id="android">
-      <div class="texted az">
-        <div class="content">
-          <h2>Servicio5</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        </div>
-      </div>
+      <p><br>Son programas diseñados para un entorno de escritorio que facilitan el uso de una base de datos que permiten llevar un control más sencillo, eficaz e imediato de los registros en una empresa, el adminstrador puede adaptarse en base a lo que necesite el para su negocio, con
+        el cual puede asegurar el manejo del inventario de productos o servicios, ingreso de activos y usuarios, todo esto siempre de forma ordenada y segura.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/69067903/Administrador-de-Base-de-Datos">click aquí</a>
+    </div>
+  </section>
 
-      <div class="image-Ar derechas">
-        <img src="pictures/ser5.JPG" alt="">
-      </div>
+  <section class="espacioinecesario">
+    <div class="espacio">
+
+  </section>
+
+  <section class="item" id="disain">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/pag/cupk2.png" alt="Apel" /></li>
+        <li><img src="pictures/pag/cupk1.png" alt="Treesun"></li>
+        <li><img src="pictures/pag/cupk3.png" alt="Camera"></li>
+        <li><img src="pictures/pag/cupk4.png" alt="Aidia"></li>
+        <li><img src="pictures/pag/cupk5.png" alt="Estructured"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
     </div>
 
+    <div class="info">
+      <h2>Diseño de logo</h2>
 
-    <div class="serfv">
-      <div class="image-Ar izquierdas">
-        <img src="pictures/ser6.png" alt="">
-      </div>
-
-      <div class="texted ei">
-        <div class="content">
-          <h2>Servicio6</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, nesciunt. Assumenda in ullam harum</p>
-        </div>
-      </div>
+      <p><br>Diseño de logo, una de las cosas más importantes para tu negocio, pues es como te distingues de los demás al publico. El desarrollo de un logo constituye en crear un efecto visual agradable y el óptimo desempeño de este
+        al quedarse grabado en la mente de las personas.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/69066235/Diseno-Web">click aquí</a>
     </div>
+  </section>
+
+  <section class="espacioinecesario">
+    <div class="espacio">
+  </section>
+
+  <section class="item" id="identidad">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/ge/ge1.png" alt="Treesun" /></li>
+        <li><img src="pictures/ge/ge2.png" alt="Apel"></li>
+        <li><img src="pictures/ge/ge3.png" alt="Camera"></li>
+        <li><img src="pictures/ge/ge4.png" alt="Aidia"></li>
+        <li><img src="pictures/ge/ge5.png" alt="Aidia"></li>
+
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
+    </div>
+
+    <div class="info">
+      <h2>Diseño de imagen corporativa</h2>
+
+      <p><br>El diseño de una imagen corporativa es importante ya que ayuda a las empresas a mostrarse de una manera uniforme y cuidada, generando confianza a sus clientes. El diseño de imagen corporativa abarca varias áreas como la creación de un logo,
+        logotipo o isotipo para la empresa, asi como la ardua investigacion del mercado y la presentación de una muestra de la imagen corporativa en diferentes usos como brochure o carteles publicitarios.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/68288663/La-General-del-Cable">click aquí</a>
+    </div>
+  </section>
+
+  <section class="espacioinecesario">
+    <div class="espacio">
+  </section>
+
+  <section class="item">
+    <div class="slide">
+      <ul class="slider">
+        <li class="selected"><img src="pictures/coe/coe1.png" alt="Treesun" /></li>
+        <li><img src="pictures/coe/coe2.png" alt="Apel"></li>
+        <li><img src="pictures/coe/coe3.png" alt="Camera"></li>
+        <li><img src="pictures/coe/coe4.png" alt="Aidia"></li>
+      </ul>
+      <!--Lista de arriba es el slider-->
+
+      <ul class="slider-navigation">
+        <li><a href="#0" class="prev inactive">Siguiente</a></li>
+        <li><a href="#0" class="next">Anterior</a></li>
+      </ul>
+      <!--Navegacion para el usuario en el slide-->
+
+      <a href="#0" class="equiz">Cerrar</a>
+      <!--Cerrar la ventana extendida-->
+    </div>
+
+    <div class="info">
+      <h2>Gestión de redes</h2>
+
+      <p>Administración de publicaciones sobre productos, servicios, eventos, ofertas, o cualquier tipo de publicación de su negocio en redes sociales como Facebook, Instagram, Twitter, esto es necesario en ciertas áreas de comercialización debido a que
+        estos medios son muy utilizados por las personas en la actualidad con mucha facilidad.
+      </p>
+      <p>Para más información haz <a href="https://www.behance.net/gallery/68287887/CONEIE">click aquí</a>
+    </div>
+  </section>
+
+  <section class="espacioinecesario">
+    <div class="espacio">
   </section>
 
   <div class="barbajo">
@@ -167,6 +297,9 @@
     <a href="https://api.whatsapp.com/send?phone=50372735902"><img src="socB/whatsapp2.png"></a>
     <a href="https://www.youtube.com/channel/UCxRbWLOtrRwYzDXxJrcA2Zw"><img src="socB/yout2.png"></a>
   </div>
+
+  <script src="script/jquery-2.1.1.js"></script>
+  <script src="script/main.js"></script>
 </body>
 
 </html>
