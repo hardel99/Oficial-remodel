@@ -157,6 +157,10 @@ img {
   }
 }
 
+.slider-navigation{
+  list-style: none;
+}
+
 @media only screen and (min-width: 1024px) {
   .slider-navigation li, .slider-pagination {
     opacity: 0;
