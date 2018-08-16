@@ -96,6 +96,7 @@
 
 .loaded .loader {
   visibility: hidden;
+  display: none;
 }
 
 @-webkit-keyframes spin {
