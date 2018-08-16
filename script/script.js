@@ -5,10 +5,10 @@ $(document).ready(function() {
       $('header').addClass('animated fadeInDown');
     }, 800);
   } else if (document.title == "Portafolio | Interfaz") {
-    $(window).load(function() {
+    setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
-    }); //Interesting
+    }, 0); //Interesting
   }
   var height = $(window).height();
   var width = $(window).width();
