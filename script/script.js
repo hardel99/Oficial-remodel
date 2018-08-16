@@ -4,7 +4,7 @@ $(document).ready(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
     }, 800);
-  } else if (document.title == "Portafolio | Interfaz") {
+  } else if (document.title == "Servicios | Interfaz") {
     setTimeout(function() {
       $('body').addClass('loaded animated fadeIn');
       $('header').addClass('animated fadeInDown');
